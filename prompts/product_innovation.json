@@ -1,0 +1,20 @@
+[
+  {
+    "id": "PROD-001",
+    "name": "feature_prioritization_framework",
+    "description": "Evaluate and prioritize a list of potential product features.",
+    "tags": ["product_management", "roadmap", "prioritization"],
+    "input_variables": ["PRODUCT_NAME", "LIST_OF_PROPOSED_FEATURES"],
+    "template": "Evaluate and prioritize the following list of potential features for our {PRODUCT_NAME} product:\n{LIST_OF_PROPOSED_FEATURES}\n\nScore each feature (1-5 scale, 5=High) based on these criteria:\n1.  **Strategic Alignment:** How well does this feature support our core product strategy and business goals?\n2.  **Customer Value:** How much demand/need exists for this feature among our target users? What impact will it have on user satisfaction?\n3.  **Market Differentiation:** Does this feature provide a competitive advantage or help us reach parity in key areas?\n4.  **Revenue Potential:** Does this feature enable new revenue streams, upsell opportunities, or attract new customers?\n5.  **Development Effort:** Estimate the complexity/resource requirement to build this feature (1=Very High Effort, 5=Very Low Effort - Note inversion).\n\nCalculate a weighted score (e.g., Strategic Fit 30%, Customer Value 30%, Differentiation 15%, Revenue 15%, Effort 10%) or provide a qualitative ranking.\n\nJustify the ranking for the top 3-5 features and identify any key dependencies between features.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "PROD-002",
+    "name": "innovation_bottleneck_analysis",
+    "description": "Analyze bottlenecks hindering innovation and propose framework.",
+    "tags": ["innovation", "strategy", "culture"],
+    "input_variables": ["DEPARTMENT_OR_BUSINESS_UNIT"],
+    "template": "Analyze the bottlenecks hindering innovation within our {DEPARTMENT_OR_BUSINESS_UNIT} and propose a framework for more rapid experimentation.\n\n1.  **Map Current Innovation Process:** Outline the typical stages an idea goes through from conception to potential launch (e.g., ideation, vetting, funding approval, prototyping, testing, scaling). Identify key decision points and gatekeepers.\n2.  **Identify Key Bottlenecks:** Analyze where ideas most often stall or get rejected. Gather input (surveys, interviews) on perceived barriers (e.g., lack of funding, risk aversion, complex approval process, lack of time/resources, unclear strategy, fear of failure).\n3.  **Analyze Resource Allocation:** Evaluate how resources (time, budget, people) are currently allocated to exploring new ideas versus optimizing existing business.\n4.  **Assess Innovation Culture:** Evaluate attitudes towards experimentation, failure tolerance, cross-functional collaboration on new ideas, and leadership support for innovation.\n5.  **Benchmark (Optional):** Compare our innovation process/culture elements against industry best practices or known innovators.\n\nPropose an Experimentation Framework:\n* **Lightweight Idea Submission & Vetting Process:** Streamlined initial review.\n* **Defined Criteria for Small-Scale Experiments:** Clear guidelines for qualifying ideas for pilot/MVP funding.\n* **Dedicated \"Experimentation\" Budget/Resources:** Small, accessible funding pool outside normal budget cycles.\n* **Rapid Prototyping/MVP Guidelines:** Focus on learning quickly with minimal resources.\n* **Clear Go/No-Go/Pivot Criteria:** Defined metrics or learning objectives for evaluating experiment success.\n* **Process for Scaling Successful Experiments:** Path to integrate validated ideas into the core business.",
+    "template_format": "f-string"
+  }
+]

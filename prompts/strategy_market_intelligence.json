@@ -1,0 +1,38 @@
+[
+  {
+    "id": "STRAT-001",
+    "name": "competitive_threat_assessment",
+    "description": "Analyze competitive threat posed by a specific competitor.",
+    "tags": ["strategy", "competitive_intelligence", "market_research"],
+    "input_variables": ["COMPETITOR_NAME", "MARKET_SEGMENT", "PRODUCT/SERVICE_LINE"],
+    "template": "Analyze the competitive threat posed by {COMPETITOR_NAME} to our business in the {MARKET_SEGMENT} market, focusing on our {PRODUCT/SERVICE_LINE}.\n\nEvaluate across these dimensions:\n1.  **Product/Service Offering:**\n    * Key features & capabilities compared to ours.\n    * Unique Selling Proposition (USP).\n    * Perceived quality and innovation pace.\n2.  **Marketing & Sales Strategy:**\n    * Target customer segments.\n    * Key messaging and positioning.\n    * Sales channels and effectiveness.\n    * Pricing strategy.\n3.  **Strengths:** Identify their top 3 competitive advantages against us.\n4.  **Weaknesses:** Identify their top 3 vulnerabilities we could potentially exploit.\n5.  **Strategic Moves:** Analyze their recent significant actions (partnerships, acquisitions, product launches) and potential future strategy.\n\nSynthesize these points into:\n* Overall threat level (High/Medium/Low) with justification.\n* Top 3 strategic recommendations for our business to effectively compete.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "STRAT-002",
+    "name": "new_market_entry_viability",
+    "description": "Evaluate the viability of entering a new geographic market.",
+    "tags": ["strategy", "market_research", "expansion"],
+    "input_variables": ["GEOGRAPHIC_REGION", "PRODUCT/SERVICE_LINE"],
+    "template": "Evaluate the viability of entering the {GEOGRAPHIC_REGION} market with our {PRODUCT/SERVICE_LINE}.\n\nAnalyze the following factors:\n1.  **Market Size & Growth Potential:** Estimated TAM/SAM/SOM, growth rate, key trends.\n2.  **Competitive Landscape:** Identify key competitors, their market share, strengths/weaknesses.\n3.  **Customer Profile & Needs:** Describe the target customer in this market. Are their needs different from our current markets?\n4.  **Regulatory & Compliance Environment:** Key legal, tax, and compliance hurdles or requirements.\n5.  **Entry Barriers & Costs:** What are the main challenges and estimated costs of entry (e.g., localization, distribution, marketing)?\n6.  **Internal Capabilities & Resource Requirements:** Do we have the necessary financial, operational, and personnel resources? What gaps exist?\n7.  **Strategic Fit:** How does entering this market align with our overall company strategy?\n\nSynthesize the findings into:\n* A SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) specifically for this market entry.\n* A preliminary recommendation (Go, No-Go, Further Research Needed) with key justifications.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "STRAT-003",
+    "name": "esg_initiative_business_case",
+    "description": "Develop a business case and roadmap for an ESG initiative.",
+    "tags": ["sustainability", "strategy", "business_case"],
+    "input_variables": ["SPECIFIC_ESG_GOAL_E.G_REDUCE_SCOPE_2_EMISSIONS_BY_30_INCREASE_BOARD_DIVERSITY"],
+    "template": "Develop a business case and integration roadmap for the proposed ESG initiative: {SPECIFIC_ESG_GOAL_E.G_REDUCE_SCOPE_2_EMISSIONS_BY_30_INCREASE_BOARD_DIVERSITY}.\n\n1.  **Strategic Alignment:** Explain how this initiative supports overall business strategy, brand values, and long-term resilience.\n2.  **Stakeholder Expectations:** Analyze demands/expectations from key stakeholders (investors, customers, employees, regulators) regarding this issue.\n3.  **Risk Assessment (Including Inaction):** Evaluate the risks associated with *not* pursuing this initiative (e.g., reputational damage, regulatory fines, loss of market share, talent attrition).\n4.  **Potential Benefits & Opportunities:** Quantify potential benefits where possible (e.g., cost savings from energy efficiency, improved brand reputation, enhanced investor relations, attracting talent, potential green premiums).\n5.  **Resource Requirements & Costs:** Estimate the necessary investment (financial, personnel, technology) and operational changes.\n6.  **Identify Key Cross-Functional Dependencies:** Outline required collaboration between departments (e.g., Operations, Finance, HR, Legal, Marketing).\n7.  **Proposed KPIs & Reporting:** Define key metrics to track progress and how results will be reported internally and externally.\n\nOutline a high-level integration roadmap:\n* Key phases and milestones.\n* Governance structure and ownership.\n* Communication plan.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "STRAT-004",
+    "name": "business_model_stress_testing",
+    "description": "Stress test the business model against future disruptions.",
+    "tags": ["strategy", "resilience", "business_model"],
+    "input_variables": ["COMPANY_OR_BUSINESS_UNIT"],
+    "template": "Objective: Stress test the current business model of {COMPANY_OR_BUSINESS_UNIT} against future disruptions and generate adaptive \"mutations\" to enhance resilience.\n\nInstructions:\n1.  **Define Core Business Model Components:** Use a framework (e.g., Business Model Canvas) to detail: Key Partners, Activities, Resources, Value Propositions, Customer Relationships, Channels, Customer Segments, Cost Structure, Revenue Streams.\n2.  **Generate Disruptive Scenarios (Counterfactuals):** Create 3 plausible, high-impact disruptive scenarios for the next 5 years (Mix of tech, market, regulatory, geopolitical - e.g., \"Scenario A: Emergence of a disruptive AI competitor,\" \"Scenario B: Major regulatory shift impacting data usage,\" \"Scenario C: Sustained supply chain collapse for key resource\").\n3.  **Stress Test Simulation:** For each scenario, analyze the impact on each component of the current business model. Identify critical vulnerabilities and potential points of failure. Quantify impact where possible (e.g., revenue loss, cost increase).\n4.  **Generate Adaptive Mutations (AI Ideation):** For the most critical vulnerabilities identified, prompt the AI to generate potential \"mutations\" or adaptations to the business model components. Encourage creative and non-obvious suggestions (e.g., \"Mutate Value Proposition by...\", \"Mutate Channel Strategy by...\", \"Develop New Revenue Stream based on...\"). Generate at least 3 mutations per major vulnerability.\n5.  **Self-Critique & Feasibility Filter:** Instruct the AI to evaluate its own proposed mutations based on:\n    * Strategic Fit: Alignment with core mission/values.\n    * Feasibility: Resource requirements, technical difficulty, time to implement.\n    * Risk Assessment: New risks introduced by the mutation.\n    * Resilience Impact: How effectively it addresses the vulnerability.\n6.  **Synthesize Adaptive Strategy:** Based on the critique, synthesize a prioritized set of the most promising adaptive mutations into a coherent strategic response for enhancing business model resilience.\n\nOutput: A report detailing the stress test results, generated adaptive mutations, the AI's self-critique of those mutations, and a synthesized adaptive strategy.",
+    "template_format": "f-string"
+  }
+]

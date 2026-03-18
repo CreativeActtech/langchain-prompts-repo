@@ -1,0 +1,20 @@
+[
+  {
+    "id": "MKT-001",
+    "name": "customer_persona_deep_dive",
+    "description": "Develop a detailed customer persona and messaging angles.",
+    "tags": ["marketing", "persona", "messaging"],
+    "input_variables": ["CUSTOMER_SEGMENT", "PRODUCT/SERVICE_CATEGORY"],
+    "template": "Develop a detailed customer persona for the {CUSTOMER_SEGMENT} segment interested in {PRODUCT/SERVICE_CATEGORY}.\n\nInclude the following sections:\n1.  **Demographics & Psychographics:** (e.g., Job Title, Industry, Company Size, Goals, Challenges, Values).\n2.  **Needs & Pain Points:** What specific problems does our {PRODUCT/SERVICE_CATEGORY} solve for them? What motivates their purchase?\n3.  **Buying Journey & Information Sources:** How do they typically discover, evaluate, and purchase solutions like ours? Where do they seek information?\n4.  **Key Objections & Concerns:** What are the most common reasons they might hesitate or choose a competitor?\n5.  **Watering Holes:** Where do they congregate online or offline (e.g., specific forums, social media groups, industry events)?\n\nBased on this persona, generate:\n* 3 distinct messaging angles that would resonate most strongly with this persona.\n* Recommended communication channels to reach them effectively.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "MKT-002",
+    "name": "sales_objection_handling_guide",
+    "description": "Create a practical objection handling guide for sales teams.",
+    "tags": ["sales", "enablement", "training"],
+    "input_variables": ["PRODUCT/SERVICE_NAME", "OBJECTION_1", "OBJECTION_2", "OBJECTION_3", "OBJECTION_4", "OBJECTION_5"],
+    "template": "Create a practical objection handling guide for our sales team regarding the {PRODUCT/SERVICE_NAME}.\n\nIdentify 5-7 of the most common objections encountered during the sales process, such as:\n* \"{OBJECTION_1}\"\n* \"{OBJECTION_2}\"\n* \"{OBJECTION_3}\"\n* \"{OBJECTION_4}\"\n* \"{OBJECTION_5}\"\n\nFor each objection, provide a structured response framework:\n1.  **Acknowledge & Empathize:** Phrase to show understanding (e.g., \"I understand why cost is a key consideration...\").\n2.  **Clarify & Isolate:** Question(s) to ensure you understand the root cause (e.g., \"Could you tell me more about what aspect of the price concerns you most?\").\n3.  **Reframe & Respond:** Core talking points addressing the objection, focusing on value, ROI, differentiation, or clarifying misconceptions. Link back to their needs.\n4.  **Provide Proof:** Mention relevant evidence (e.g., case study, testimonial, data point, demo).\n5.  **Confirm & Check:** Question to ensure the objection is addressed and check if other concerns exist (e.g., \"Does that help address your concern about the price?\").\n\nFormat this into an easy-to-reference guide for sales representatives.",
+    "template_format": "f-string"
+  }
+]

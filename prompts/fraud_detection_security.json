@@ -1,0 +1,137 @@
+[
+  {
+    "id": "FRAUD-001",
+    "name": "multi_claim_narrative_similarity",
+    "description": "Detect coordinated fraud across large document sets by searching past claims for similar narratives.",
+    "tags": ["fraud_detection", "insurance", "clustering"],
+    "input_variables": ["new_claim"],
+    "template": "Given this new insurance claim, search the past 12 months of filed claims and identify any submissions with similar narrative structures or identical language patterns. Provide a similarity score, flagged fields, and linked case IDs.\n\nNew Claim:\n{new_claim}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-002",
+    "name": "internal_fraud_communication_audit",
+    "description": "Uncover insider threats in support tickets, email logs, or employee chat systems.",
+    "tags": ["fraud_detection", "insider_threat", "compliance"],
+    "input_variables": ["communication_corpus"],
+    "template": "Analyze this corpus of internal communications for signs of policy violations, collusion, or linguistic indicators of fraud. Highlight suspect phrases, involved parties, and sentiment shifts over time.\n\nCommunications:\n{communication_corpus}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-003",
+    "name": "adaptive_fraud_profile_generation",
+    "description": "Model evolving fraud patterns tied to individual users or accounts.",
+    "tags": ["fraud_detection", "behavioral_analysis", "stylometry"],
+    "input_variables": ["user_communications"],
+    "template": "Generate a behavioral profile based on the following communications. Identify linguistic patterns, tone, common vocabulary, and submission behavior. Flag anomalies that deviate from this user’s past behavior.\n\nCommunications:\n{user_communications}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-004",
+    "name": "regulatory_compliance_cross_validation",
+    "description": "Verify that customer statements or reports meet compliance standards.",
+    "tags": ["fraud_detection", "compliance", "legal"],
+    "input_variables": ["claim_document"],
+    "template": "Cross-check this claim document against industry-standard language and regulatory guidelines. Flag deviations, vague statements, or non-compliant terms.\n\nDocument:\n{claim_document}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-005",
+    "name": "real_time_financial_scam_detector",
+    "description": "Monitor live chats or support emails for scam indicators.",
+    "tags": ["fraud_detection", "real_time", "customer_support"],
+    "input_variables": ["live_text_input"],
+    "template": "Monitor the following live text input for indicators of phishing, scam attempts, or financial deception. Provide real-time risk assessment and recommended actions.\n\nInput:\n{live_text_input}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-006",
+    "name": "document_consistency_checker",
+    "description": "Verify that all components of large submissions are internally consistent.",
+    "tags": ["fraud_detection", "validation", "audit"],
+    "input_variables": ["document_set"],
+    "template": "Review the following set of documents for internal consistency. Cross-check names, addresses, job titles, income, and reported events. Flag contradictions or reused templates.\n\nDocuments:\n{document_set}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-007",
+    "name": "multilingual_fraud_detection",
+    "description": "Detect suspicious text across multiple languages and regions.",
+    "tags": ["fraud_detection", "multilingual", "translation"],
+    "input_variables": ["document_text"],
+    "template": "Translate and analyze this document for fraud indicators. Normalize language to English, identify cultural phrasing, and apply fraud heuristics across languages.\n\nDocument:\n{document_text}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-008",
+    "name": "synthetic_document_detection",
+    "description": "Identify AI-generated or machine-altered text submissions.",
+    "tags": ["fraud_detection", "ai_detection", "deepfake_text"],
+    "input_variables": ["document_text"],
+    "template": "Analyze this document for indicators of AI-generated or manipulated text. Look for repetitive structures, unnatural phrasing, and language distribution anomalies.\n\nDocument:\n{document_text}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-009",
+    "name": "time_lag_deception_analysis",
+    "description": "Spot time-based inconsistencies in a user's reports.",
+    "tags": ["fraud_detection", "temporal_analysis", "timeline"],
+    "input_variables": ["entity_reports"],
+    "template": "Compare multiple entries or reports over time from the same entity. Highlight contradictions, adjusted narratives, or suspicious timeline gaps.\n\nReports:\n{entity_reports}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-010",
+    "name": "high_risk_customer_alert",
+    "description": "Aggregate user behavior into a risk score based on linguistic indicators.",
+    "tags": ["fraud_detection", "risk_assessment", "profiling"],
+    "input_variables": ["customer_history"],
+    "template": "Analyze this customer’s history of communication, complaints, and claims. Summarize their behavioral risk profile based on tone, frequency of incidents, and semantic flags.\n\nHistory:\n{customer_history}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-011",
+    "name": "suspicious_language_detector",
+    "description": "Analyze text for deceptive or overly formal language indicating fraud.",
+    "tags": ["fraud_detection", "linguistics", "style"],
+    "input_variables": ["input_text"],
+    "template": "Analyze the following text for signs of deceptive or overly formal language that may indicate fraud. Highlight phrases that stand out as suspicious and explain why.\nInput: {input_text}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-012",
+    "name": "style_inconsistency_checker",
+    "description": "Compare writing style of two texts to identify different authors or fabrication.",
+    "tags": ["fraud_detection", "stylometry", "comparison"],
+    "input_variables": ["input_a", "input_b"],
+    "template": "Compare the writing style of the following two texts. Identify any significant inconsistencies that may suggest they were written by different individuals or involve fabricated content.\nInput A: {input_a}\nInput B: {input_b}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-013",
+    "name": "semantic_duplicate_finder",
+    "description": "Flag text if it is semantically similar to known prior entries.",
+    "tags": ["fraud_detection", "similarity", "deduplication"],
+    "input_variables": ["input_text"],
+    "template": "Evaluate this text and flag it if it is semantically similar to known prior entries. Use similarity scoring and explain your confidence level.\nInput: {input_text}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-014",
+    "name": "unusual_entity_detector",
+    "description": "Extract named entities and check against flagged records.",
+    "tags": ["fraud_detection", "ner", "entity_extraction"],
+    "input_variables": ["input_text"],
+    "template": "Extract all named entities (people, addresses, emails, companies) from this text and check if any are unusually repeated or associated with flagged entries in previous records.\nInput: {input_text}",
+    "template_format": "f-string"
+  },
+  {
+    "id": "FRAUD-015",
+    "name": "emotional_manipulation_identifier",
+    "description": "Detect signs of emotional manipulation (urgency, fear, guilt).",
+    "tags": ["fraud_detection", "sentiment", "psychology"],
+    "input_variables": ["input_text"],
+    "template": "Does this text contain signs of emotional manipulation (urgency, fear, guilt)? Rate the emotional tone and highlight any concerning language.\nInput: {input_text}",
+    "template_format": "f-string"
+  }
+]

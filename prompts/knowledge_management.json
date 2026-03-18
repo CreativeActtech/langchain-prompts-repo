@@ -1,0 +1,47 @@
+[
+  {
+    "id": "KM-001",
+    "name": "knowledge_ecosystem_mapping",
+    "description": "Model the flow of critical knowledge as an ecosystem.",
+    "tags": ["knowledge_management", "organizational_design", "systems_thinking"],
+    "input_variables": ["DEPARTMENT_OR_PROJECT_TEAM", "LIST_CRITICAL_DOMAINS"],
+    "template": "Objective: Model the flow and health of critical knowledge within {DEPARTMENT_OR_PROJECT_TEAM} as an ecosystem and design interventions to improve resilience against knowledge loss.\n\nInstructions:\n1.  **Pre-computation - Define Ecosystem Elements:**\n    * Identify Key Knowledge Domains: {LIST_CRITICAL_DOMAINS}.\n    * Identify Knowledge Sources/Repositories: (e.g., Experts/Individuals, Documents, Databases, Shared Drives, Collaboration Tools).\n    * Identify Knowledge Consumers: (Roles/Teams needing this knowledge).\n    * Identify Potential Barriers/Filters: (e.g., Silos, Access Restrictions, Poor Searchability, Outdated Info, Lack of Trust).\n2.  **Metaphorical Modeling (Analogy Generation):** Generate 3 distinct ecological analogies for knowledge flow within this context (e.g., \"Knowledge as a watershed,\" \"Knowledge as mycorrhizal network,\" \"Knowledge as a seed bank\").\n3.  **Ecosystem Mapping & Health Assessment (Using Chosen Metaphor):** Select the most fitting metaphor. Analyze the current state using its concepts:\n    * Map the flow paths (like water channels or fungal connections).\n    * Identify 'fertile zones' (knowledge hubs) and 'deserts' (knowledge gaps).\n    * Identify 'pollutants' or 'invasive species' (misinformation, outdated knowledge).\n    * Assess overall 'biodiversity' (variety of knowledge types/sources) and 'resilience' (ability to withstand loss of a source/pathway).\n4.  **Intervention Design (Inspired by Ecology):** Based on the ecosystem assessment and metaphor, brainstorm novel interventions beyond standard knowledge management tools. Examples inspired by ecology:\n    * Creating 'pollinator' roles to cross-fertilize knowledge between silos.\n    * Establishing 'knowledge succession planning' like forest regeneration.\n    * Designing 'information composting' to break down outdated knowledge.\n    * Building 'knowledge corridors' between isolated teams.\n5.  **Prioritize Interventions:** Evaluate proposed interventions based on potential impact on knowledge resilience, feasibility, and alignment with the chosen metaphor's insights.\n\nOutput: An analysis of the knowledge ecosystem using an ecological metaphor, identification of health issues, and a prioritized list of novel interventions.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "KM-002",
+    "name": "lessons_learned_extractor",
+    "description": "Extract structured lessons learned from project artifacts or post-mortems.",
+    "tags": ["knowledge_management", "project_management", "continuous_improvement"],
+    "input_variables": ["PROJECT_NAME", "PROJECT_ARTIFACTS"],
+    "template": "Analyze the following project artifacts for {PROJECT_NAME} to extract structured 'Lessons Learned'.\n\nArtifacts:\n{PROJECT_ARTIFACTS}\n\nPlease perform the following:\n1.  **Identify Key Events:** List significant successes, failures, or near-misses described in the text.\n2.  **Root Cause Analysis:** For each event, determine the underlying cause (process, people, technology, or external).\n3.  **Formulate Lessons:** State the lesson learned clearly and concisely (e.g., 'Allocate buffer time for API integration testing').\n4.  **Recommend Actions:** Suggest specific process changes or guidelines to implement this lesson in future projects.\n\nFormat the output as a structured table or list containing: Event, Root Cause, Lesson Learned, and Recommended Action.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "KM-003",
+    "name": "subject_matter_expert_locator",
+    "description": "Identify subject matter experts (SMEs) within a corpus of communications or documents.",
+    "tags": ["knowledge_management", "expertise_location", "hr"],
+    "input_variables": ["CORPUS_DATA", "TOPIC_AREA"],
+    "template": "Analyze the provided corpus of communications, meeting transcripts, or documentation to identify Subject Matter Experts (SMEs) regarding the topic: '{TOPIC_AREA}'.\n\nCorpus:\n{CORPUS_DATA}\n\nInstructions:\n1.  **Keyword & Concept Analysis:** Identify mentions of the topic and related technical terminology.\n2.  **Contributor Analysis:** Map contributions to individuals. Look for:\n    *   Authoritative statements or answers provided.\n    *   Documents authored.\n    *   Questions directed specifically at them by others.\n3.  **Network Mapping:** Identify who others turn to for advice on this topic.\n4.  **Expertise Scoring:** Assign a qualitative expertise level (High, Medium, Low) to identified individuals based on the depth and frequency of their contributions.\n\nOutput: A list of identified potential SMEs with a justification for their selection and their specific area of focus within the topic.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "KM-004",
+    "name": "knowledge_base_article_generator",
+    "description": "Convert raw problem-solving text into a structured Knowledge Base article.",
+    "tags": ["knowledge_management", "documentation", "customer_support"],
+    "input_variables": ["RAW_INTERACTION_TEXT", "TARGET_AUDIENCE"],
+    "template": "Convert the following raw problem-solving interaction into a structured Knowledge Base Article suitable for {TARGET_AUDIENCE}.\n\nRaw Interaction Text:\n{RAW_INTERACTION_TEXT}\n\nStructure the article as follows:\n1.  **Title:** Clear and searchable description of the problem.\n2.  **Summary:** A brief overview of the issue and the solution.\n3.  **Symptoms:** How the problem manifests.\n4.  **Cause:** The root cause of the issue (if known).\n5.  **Resolution:** Step-by-step instructions to resolve the issue.\n6.  **Prevention:** Tips to avoid the issue in the future (optional).\n\nEnsure the language is polished, professional, and free of jargon not appropriate for the target audience. Remove any sensitive personal data or internal chatter before generating the final output.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "KM-005",
+    "name": "taxonomy_enrichment_suggester",
+    "description": "Suggest new tags or categories to improve an existing knowledge taxonomy.",
+    "tags": ["knowledge_management", "information_architecture", "taxonomy"],
+    "input_variables": ["EXISTING_TAXONOMY", "CONTENT_SAMPLE"],
+    "template": "Analyze the provided content sample against the existing taxonomy to identify gaps and suggest enrichment.\n\nExisting Taxonomy:\n{EXISTING_TAXONOMY}\n\nContent Sample:\n{CONTENT_SAMPLE}\n\nInstructions:\n1.  **Coverage Analysis:** Identify key concepts, entities, or themes in the content that are *not* adequately covered by existing tags.\n2.  **Ambiguity Check:** Identify content that fits awkwardly into multiple categories or none at all.\n3.  **Suggestion Generation:** Propose new tags or sub-categories to improve findability.\n4.  **Hierarchy Adjustment:** Suggest any changes to the parent-child relationships in the taxonomy if the content suggests a logical restructuring.\n\nOutput: A list of proposed new tags, definitions for them, and where they should fit into the existing hierarchy.",
+    "template_format": "f-string"
+  }
+]

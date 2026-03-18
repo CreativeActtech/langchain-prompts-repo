@@ -1,0 +1,47 @@
+[
+  {
+    "id": "OPS-001",
+    "name": "business_process_optimization",
+    "description": "Analyze current state of a business process and propose optimizations.",
+    "tags": ["operations", "process_improvement", "efficiency"],
+    "input_variables": ["BUSINESS_PROCESS_NAME"],
+    "template": "Analyze the current state of our {BUSINESS_PROCESS_NAME} process (e.g., Customer Onboarding, Invoice Approval, Employee Hiring) and propose optimizations.\n\n1.  **Current State Mapping:** Describe the key steps, actors involved, typical timeline, and systems used.\n2.  **Pain Point Identification:** Identify the top 3-5 bottlenecks, inefficiencies, sources of errors, or areas of frustration within the current process. Use data if available (e.g., cycle time, error rates).\n3.  **Ideal Future State Vision:** Describe how the process would operate more effectively.\n4.  **Recommended Improvements:** Propose specific, actionable changes categorized by:\n    * Technology/Automation opportunities.\n    * Process simplification/redesign steps.\n    * People/Training requirements.\n5.  **Key Performance Indicators (KPIs):** Suggest 2-3 metrics to track the success of the proposed improvements.\n\nConclude with a prioritized list of the top 3 recommended changes based on potential impact and feasibility.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "OPS-002",
+    "name": "change_management_communication_plan",
+    "description": "Develop a communication plan for organizational change.",
+    "tags": ["hr", "change_management", "communication"],
+    "input_variables": ["DESCRIPTION_OF_CHANGE", "DATE"],
+    "template": "Develop a communication plan for the upcoming organizational change: {DESCRIPTION_OF_CHANGE}. The target rollout date is {DATE}.\n\n1.  **Identify Key Stakeholder Groups:** (e.g., All Employees, Affected Department(s), Managers, External Partners, Customers).\n2.  **Define Communication Objectives:** What do we want each group to know, feel, and do as a result of the communication?\n3.  **Develop Core Messaging:** Craft the primary narrative explaining the 'What, Why, When, How' of the change, including benefits and addressing potential concerns.\n4.  **Plan Communication Activities & Channels:** For each stakeholder group, specify:\n    * **Key Messages:** Tailored points from the core narrative.\n    * **Channel(s):** (e.g., Town Hall, Email, Newsletter, Intranet Update, Manager Cascade, FAQ document, Training Session).\n    * **Timing/Frequency:** When and how often will communication occur?\n    * **Sender:** Who is the most credible source for this message/group?\n5.  **Feedback Mechanism:** How will we gather feedback and address questions/concerns during the transition?\n\nOutline a high-level communication timeline leading up to and following the {DATE} rollout.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "OPS-003",
+    "name": "hybrid_work_model_audit",
+    "description": "Audit effectiveness of current hybrid work model.",
+    "tags": ["hr", "future_of_work", "operations"],
+    "input_variables": ["DESCRIPTION_OF_MODEL", "DATE"],
+    "template": "Audit the effectiveness of our current hybrid work model ({DESCRIPTION_OF_MODEL}) implemented since {DATE} and propose refinements.\n\n1.  **Assess Against Original Goals:** Evaluate performance against the intended objectives (e.g., productivity, employee engagement, talent attraction/retention, cost savings, innovation).\n2.  **Analyze Employee Experience:** Gather feedback (surveys, focus groups) on employee satisfaction, well-being, perceived fairness, inclusion, and collaboration challenges in the hybrid setup.\n3.  **Analyze Manager Experience:** Gather feedback on challenges related to managing hybrid teams, performance evaluation, maintaining team cohesion.\n4.  **Evaluate Technology & Tools:** Assess the suitability and utilization of collaboration tools, communication platforms, and remote access infrastructure. Identify gaps or redundancies.\n5.  **Impact on Collaboration & Innovation:** Analyze (qualitatively or quantitatively if possible) the impact of the hybrid model on cross-functional collaboration and innovation processes.\n6.  **Review Policies & Guidelines:** Assess the clarity, consistency, and fairness of current hybrid work policies.\n\nPropose Refinements:\n* Specific adjustments to policy (e.g., core hours, in-office days/purpose).\n* Recommendations for technology/tool improvements or training.\n* Guidance or training for managers on leading hybrid teams.\n* Initiatives to enhance virtual/hybrid collaboration and social connection.\n* Updated performance management guidelines for hybrid context.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "OPS-004",
+    "name": "strategic_cost_optimization",
+    "description": "Identify strategic cost optimization opportunities.",
+    "tags": ["finance", "strategy", "operations"],
+    "input_variables": ["CURRENT_ECONOMIC_PRESSURE_E_G_INFLATION_REDUCED_DEMAND"],
+    "template": "Identify strategic cost optimization opportunities across the organization, moving beyond simple budget cuts to address underlying inefficiencies, particularly in light of {CURRENT_ECONOMIC_PRESSURE_E_G_INFLATION_REDUCED_DEMAND}.\n\n1.  **Analyze Major Cost Categories:** Break down key spending areas (e.g., Personnel, COGS, SG&A, IT, Marketing, Travel) across departments/business units.\n2.  **Identify Process Inefficiencies Driving Costs:** Pinpoint processes with high manual effort, rework, delays, or resource consumption (e.g., complex approval chains, poor demand forecasting, inefficient logistics).\n3.  **Review Third-Party Spend & Contracts:** Analyze major vendor contracts for renegotiation potential, service level consolidation, or identifying underutilized services/licenses.\n4.  **Benchmark Key Cost Ratios:** Compare relevant cost metrics (e.g., IT spend per employee, SG&A as % of revenue) against industry peers to identify outliers.\n5.  **Identify Automation Opportunities:** Pinpoint manual, repetitive tasks across departments that could be automated using existing or new technology (RPA, AI).\n6.  **Evaluate Low-Value Activities/Spending:** Identify activities or spending categories with questionable ROI or strategic alignment that could potentially be reduced or eliminated.\n\nSynthesize and Prioritize:\n* A list of the top 5-10 concrete cost optimization opportunities.\n* Estimated potential savings and implementation difficulty/timeline for each.\n* Prioritization based on savings potential vs. impact on strategic goals and employee morale.",
+    "template_format": "f-string"
+  },
+  {
+    "id": "OPS-005",
+    "name": "customer_journey_friction_analysis",
+    "description": "Analyze customer journey to identify and prioritize friction points.",
+    "tags": ["customer_experience", "operations", "ux"],
+    "input_variables": ["SPECIFIC_JOURNEY_E_G_PURCHASING_A_PRODUCT_RESOLVING_A_SUPPORT_ISSUE_ONBOARDING"],
+    "template": "Analyze a key customer journey - {SPECIFIC_JOURNEY_E_G_PURCHASING_A_PRODUCT_RESOLVING_A_SUPPORT_ISSUE_ONBOARDING} - across all relevant touchpoints to identify and prioritize friction points impacting experience.\n\n1.  **Map the Customer Journey:** Visualize the steps the customer takes across different channels (e.g., Website, Mobile App, Social Media, Email, Call Center, In-Store/Physical Location). Note transitions between channels.\n2.  **Gather Data & Feedback:** Collect quantitative data (e.g., web analytics drop-off rates, call center wait times, app usage patterns) and qualitative feedback (e.g., customer surveys, support ticket themes, social media comments, usability testing) for each step/touchpoint.\n3.  **Identify Friction Points:** Pinpoint specific issues causing customer frustration, confusion, delay, or channel switching (e.g., inconsistent information across channels, broken links, long wait times, repetitive data entry, lack of self-service options, poor mobile experience).\n4.  **Assess Impact:** Evaluate the severity of each friction point based on frequency, customer effort required, impact on satisfaction (CSAT/NPS), and potential business impact (e.g., cart abandonment, churn, negative reviews).\n5.  **Identify Root Causes:** Analyze *why* these friction points exist (e.g., data silos, system limitations, process flaws, inadequate training, inconsistent policies).\n\nPrioritize for Action:\n* Rank the identified friction points based on assessed impact and feasibility of fixing.\n* Recommend specific solutions or improvements for the top 3-5 highest-priority friction points.\n* Suggest ownership for implementing these improvements.",
+    "template_format": "f-string"
+  }
+]

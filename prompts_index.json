@@ -1,0 +1,74 @@
+{
+  "repository_name": "CreativeAct Enterprise LangChain Prompts",
+  "loader_compatibility": "src.loader.PromptRepoLoader",
+  "schema_version": "1.0",
+  "categories": [
+    {
+      "filename": "fraud_detection_security.json",
+      "display_name": "Fraud Detection & Security",
+      "description": "Coordinated fraud, insider threats, scam detection.",
+      "count": 15,
+      "prompt_ids": [
+        "FRAUD-001", "FRAUD-002", "FRAUD-003", "FRAUD-004", "FRAUD-005",
+        "FRAUD-006", "FRAUD-007", "FRAUD-008", "FRAUD-009", "FRAUD-010",
+        "FRAUD-011", "FRAUD-012", "FRAUD-013", "FRAUD-014", "FRAUD-015"
+      ]
+    },
+    {
+      "filename": "risk_compliance_governance.json",
+      "display_name": "Risk, Compliance & Governance",
+      "description": "Project risk, cybersecurity posture, ethical red teaming.",
+      "count": 5,
+      "prompt_ids": ["RISK-001", "RISK-002", "RISK-003", "RISK-004", "RISK-005"]
+    },
+    {
+      "filename": "strategy_market_intelligence.json",
+      "display_name": "Strategy & Market Intelligence",
+      "description": "Competitive analysis, market entry, ESG initiatives.",
+      "count": 4,
+      "prompt_ids": ["STRAT-001", "STRAT-002", "STRAT-003", "STRAT-004"]
+    },
+    {
+      "filename": "product_innovation.json",
+      "display_name": "Product & Innovation",
+      "description": "Feature prioritization, innovation bottlenecks.",
+      "count": 2,
+      "prompt_ids": ["PROD-001", "PROD-002"]
+    },
+    {
+      "filename": "marketing_sales.json",
+      "display_name": "Marketing & Sales",
+      "description": "Customer personas, objection handling.",
+      "count": 2,
+      "prompt_ids": ["MKT-001", "MKT-002"]
+    },
+    {
+      "filename": "operations_process.json",
+      "display_name": "Operations & Process",
+      "description": "Process optimization, cost management, customer journeys.",
+      "count": 5,
+      "prompt_ids": ["OPS-001", "OPS-002", "OPS-003", "OPS-004", "OPS-005"]
+    },
+    {
+      "filename": "hr_talent.json",
+      "display_name": "HR & Talent",
+      "description": "Engagement surveys, skills gaps, burnout analysis.",
+      "count": 3,
+      "prompt_ids": ["HR-001", "HR-002", "HR-003"]
+    },
+    {
+      "filename": "technology_ai.json",
+      "display_name": "Technology & AI",
+      "description": "Tech adoption, AI readiness, human-AI workflows.",
+      "count": 3,
+      "prompt_ids": ["TECH-001", "TECH-002", "TECH-003"]
+    },
+    {
+      "filename": "knowledge_management.json",
+      "display_name": "Knowledge Management",
+      "description": "Knowledge ecosystems, lessons learned, taxonomy.",
+      "count": 5,
+      "prompt_ids": ["KM-001", "KM-002", "KM-003", "KM-004", "KM-005"]
+    }
+  ]
+}
